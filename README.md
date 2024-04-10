@@ -1,4 +1,5 @@
-Task1: Ansible 
+**Task1: SSH Keygen method 
+**
 ----------
 
 ssh-keygen -t ed25519 -C "<comment regarding the key>"
@@ -8,8 +9,9 @@ give the path (Defaule : ./.ssh/ed25519 ) and password for key generated
 
 
 
-Task2: GITPlay
-===============
+**Task2: GITPlay
+**
+----------
 create repo
 add ssh keys in settings
 navigate to public key and copy contents to ssh keys. 
@@ -25,18 +27,20 @@ git commit -m <"Message ">
 git push origin master/main
 
 
-Task3: 
-========
+**Task 3: 
+**
+--------
 configure ansible.cfg
 in that mention the path of inventory and also pvt key of ansible under [default]
 eg : 
-========
+----------
 [defaults]
 inventory = inventoryServerlist
 private_key_file= ~/.ssh/ansible
-========
+-----------
 
-Task4: 
+**Task 4: 
+**
 ---------
 then we can run ansible command in short hand form : 
 
