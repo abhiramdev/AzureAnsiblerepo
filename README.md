@@ -61,3 +61,5 @@ Run Ansible commands in shorthand form:
     ```
     ansible all -i inventoryServerlist -m <module_name>
     ```
+     ```
+ansible all -m apt -a "name=nginx status=latest" --become --ask-become-pass  #if more args are used eg : Insgtall latest package use in " "    ```
